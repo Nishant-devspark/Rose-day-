@@ -1,0 +1,362 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A heartfelt Rose Day tribute" />
+    <title>For My Forever Rose 🌹</title>
+
+    <!-- Preconnect to optimize font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+    <!-- Premium Font Selection -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Gilda+Display&family=Archivo:wght@100;300;400;600;800&family=Lora:ital,wght@0,400;0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Ambient Background Effects -->
+    <div class="ambient-overlay"></div>
+    <div class="grain-overlay"></div>
+
+    <!-- Custom Cursor Trail -->
+    <div class="cursor-trail"></div>
+    <canvas id="cursorCanvas"></canvas>
+
+    <!-- Audio Control (Fixed Position) -->
+    <button
+      class="audio-control"
+      id="audioControl"
+      aria-label="Toggle background music"
+    >
+      <svg
+        class="audio-icon"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path d="M9 18V5l12-2v13"></path>
+        <circle cx="6" cy="18" r="3"></circle>
+        <circle cx="18" cy="16" r="3"></circle>
+      </svg>
+      <span class="audio-waves">
+        <span class="wave"></span>
+        <span class="wave"></span>
+        <span class="wave"></span>
+      </span>
+    </button>
+
+    <!-- Hero Landing -->
+    <section class="hero-landing" id="heroLanding">
+      <div class="hero-bg-animation">
+        <div class="rose-particle"></div>
+        <div class="rose-particle"></div>
+        <div class="rose-particle"></div>
+        <div class="rose-particle"></div>
+        <div class="rose-particle"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-date">February 7, 2024</div>
+        <h1 class="hero-title">
+          <span class="title-line">Happy Rose Day</span>
+          <span class="title-line title-emphasis">My Forever Love</span>
+        </h1>
+        <p class="hero-subtitle">
+          In a universe of billions, you're my only one
+        </p>
+        <button class="cta-enter" id="enterBtn">
+          <span class="cta-text">Enter Our Story</span>
+          <span class="cta-arrow">→</span>
+        </button>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- Main Experience Container -->
+    <div class="experience-container" id="experienceContainer">
+      <!-- Photo Showcase Section -->
+      <section class="photo-showcase">
+        <div class="section-wrapper">
+          <div class="photo-stage">
+            <div class="photo-frame-outer">
+              <div class="photo-ambient-glow"></div>
+              <div class="photo-frame-inner">
+                <img
+                  src="new.jpeg"
+                  alt="The love of my life"
+                  class="featured-photo"
+                  id="featuredPhoto"
+                  loading="lazy"
+                />
+                <div class="photo-overlay"></div>
+              </div>
+              <div class="floating-petals" id="floatingPetals"></div>
+            </div>
+          </div>
+          <div class="photo-caption">
+            <h2 class="caption-title">The Most Beautiful Rose</h2>
+            <p class="caption-text">In my garden of life, you bloom eternal</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Letter Section -->
+      <section class="letter-section">
+        <div class="section-wrapper">
+          <div class="letter-container">
+            <div class="letter-header">
+              <div class="letter-seal">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </svg>
+              </div>
+              <h2 class="section-heading">From My Heart</h2>
+            </div>
+            <div class="letter-body" id="letterBody">
+              <!-- Content will be typed by JavaScript -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Timeline Section -->
+      <section class="timeline-section">
+        <div class="section-wrapper">
+          <h2 class="section-heading timeline-heading">Our Journey Together</h2>
+
+          <div class="timeline-grid">
+            <article class="memory-card" data-aos="fade-up">
+              <div class="memory-number">01</div>
+              <div class="memory-content">
+                <div class="memory-icon">✨</div>
+                <h3 class="memory-title">First Glimpse</h3>
+                <time class="memory-date">The day everything changed</time>
+                <p class="memory-description">
+                  Do you remember? We first met in the college computer lab. 💻
+                  You thought I was a teacher and spoke to me so innocently. 😊
+                  I smiled, and somewhere in that moment, my heart quietly chose
+                  you. One small misunderstanding… and our beautiful story
+                  began. ❤️✨
+                </p>
+              </div>
+              <div class="memory-gradient"></div>
+            </article>
+
+            <article
+              class="memory-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <div class="memory-number">02</div>
+              <div class="memory-content">
+                <div class="memory-icon">🌙</div>
+                <h3 class="memory-title">First Date</h3>
+                <time class="memory-date"
+                  >Nervous hearts, endless conversations</time
+                >
+                <p class="memory-description">
+                  Every day after college, when classes ended, we used to walk
+                  together up to the highway. 🌆 We would stop there, talk
+                  endlessly, laugh, tease each other, and forget the whole world
+                  for a while. 😊❤️ Those moments were full of fun, warmth, and
+                  quiet happiness. We both waited for that time every single
+                  day—just to be together, just to talk, just to feel close. 💕
+                  Simple walks, endless talk, and pure memories that still live
+                  in my heart. ✨
+                </p>
+              </div>
+              <div class="memory-gradient"></div>
+            </article>
+
+            <article
+              class="memory-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <div class="memory-number">03</div>
+              <div class="memory-content">
+                <div class="memory-icon">😂</div>
+                <h3 class="memory-title">The Lost Adventure</h3>
+                <time class="memory-date"
+                  >When getting lost became our favorite memory</time
+                >
+                <p class="memory-description">
+                  Once, in a moment of intense anger, my eyes turned red with
+                  rage. 😂 My anger scared my wife so deeply that she started
+                  trembling and couldn’t even get up. 💔 Seeing her that
+                  frightened shook me from within. Even today, that moment
+                  weighs heavily on my heart. I have promised myself that anger
+                  will never overpower love again. She is incredibly precious to
+                  me, and I want her to always feel safe, respected, and deeply
+                  loved by my side. ❤️🤍
+                </p>
+              </div>
+              <div class="memory-gradient"></div>
+            </article>
+
+            <article
+              class="memory-card"
+              data-aos="fade-up"
+              data-aos-delay="300"
+            >
+              <div class="memory-number">04</div>
+              <div class="memory-content">
+                <div class="memory-icon">💫</div>
+                <h3 class="memory-title">The Moment I Knew</h3>
+                <time class="memory-date">Forever became too short a time</time>
+                <p class="memory-description">
+                  Then, on the 19th, we met again. 🤍 I hugged her gently and
+                  kept her close to me. We talked for a long time—soft, sweet
+                  talk, full of warmth and comfort. 💕 In my arms, she felt so
+                  safe and relaxed that she slowly fell asleep. 😴❤️ That moment
+                  was quiet, peaceful, and full of love—one of those memories my
+                  heart will always protect. 🌙✨
+                </p>
+              </div>
+              <div class="memory-gradient"></div>
+            </article>
+
+            <article
+              class="memory-card"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <div class="memory-number">05</div>
+              <div class="memory-content">
+                <div class="memory-icon">🏡</div>
+                <h3 class="memory-title">Building Our World</h3>
+                <time class="memory-date">Every day is a new beginning</time>
+                <p class="memory-description">
+                  From morning chai to late-night talks, you've made every
+                  ordinary moment extraordinary. Thank you for choosing me, for
+                  loving me, for being my everything.
+                </p>
+              </div>
+              <div class="memory-gradient"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Surprise Reveal Section -->
+      <section class="surprise-section">
+        <div class="section-wrapper">
+          <div class="surprise-container">
+            <div class="surprise-icon">🎁</div>
+            <h2 class="surprise-title">I Have Something Special For You</h2>
+            <button class="surprise-btn" id="surpriseBtn">
+              <span class="btn-shimmer"></span>
+              <span class="btn-text">Open Your Gift</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Promise Section -->
+      <section class="promise-section">
+        <div class="section-wrapper">
+          <div class="promise-container">
+            <div class="rose-bloom">
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+              <div class="petal"></div>
+            </div>
+            <h2 class="promise-heading">My Eternal Promise</h2>
+            <div class="promise-text">
+              <p>Every rose reminds me of your beauty</p>
+              <p>Every thorn reminds me to protect your heart</p>
+              <p>Every petal reminds me of moments we've shared</p>
+              <p>Every fragrance reminds me you're my home</p>
+            </div>
+            <button class="final-cta" id="finalBtn">
+              <span class="final-cta-text">I Love You Forever</span>
+              <span class="final-cta-icon">💍</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="site-footer">
+        <div class="footer-content">
+          <p class="footer-text">Crafted with infinite love and devotion</p>
+          <p class="footer-date">Rose Day • February 2024</p>
+        </div>
+        <div class="footer-hearts">
+          <span class="footer-heart">❤</span>
+          <span class="footer-heart">❤</span>
+          <span class="footer-heart">❤</span>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Surprise Modal -->
+    <div class="modal-overlay" id="surpriseModal">
+      <div class="modal-container">
+        <button class="modal-close" id="closeModal" aria-label="Close">
+          ×
+        </button>
+        <div class="modal-content">
+          <div class="modal-icon-burst">
+            <div class="burst-particle"></div>
+            <div class="burst-particle"></div>
+            <div class="burst-particle"></div>
+            <div class="burst-particle"></div>
+          </div>
+          <h2 class="modal-title">You Are My Forever</h2>
+          <div class="modal-message">
+            <p>Every heartbeat whispers your name</p>
+            <p>Every breath I take is for you</p>
+            <p>You're not just my love</p>
+            <p>You're my life, my soul, my everything</p>
+            <p class="modal-signature">Thank you for being you 🌹</p>
+          </div>
+        </div>
+        <canvas class="fireworks-canvas" id="fireworksCanvas"></canvas>
+      </div>
+    </div>
+
+    <!-- Final Modal -->
+    <div class="modal-overlay" id="finalModal">
+      <div class="modal-container final-modal">
+        <button class="modal-close" id="closeFinalModal" aria-label="Close">
+          ×
+        </button>
+        <div class="modal-content">
+          <div class="beating-heart-animation">💖</div>
+          <h2 class="modal-title">And I Love You More!</h2>
+          <div class="modal-message">
+            <p>Thank you for making every day feel like Rose Day</p>
+            <p>You are my forever and always</p>
+            <p class="modal-finale">Happy Rose Day, My Beautiful Wife! 🌹</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Background Audio -->
+    <audio id="backgroundMusic" loop preload="metadata">
+      <source
+        src="https://cdn.pixabay.com/audio/2022/03/10/audio_2c87ba15db.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
